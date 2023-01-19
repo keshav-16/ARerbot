@@ -133,6 +133,33 @@ body{
         display: none;
     }
 }
+.footer{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #eee;
+    z-index: 3;
+    opacity: 0.9;
+    
+}
+.footer h4{
+    margin-bottom: 0px;
+    margin-top: 7px;
+    font-weight: 600;
+}
+.footer p{
+    margin-bottom: 7px;
+}
+.icons .fa{
+    color: #0b090a;
+    margin: 0 5px;
+    cursor: pointer;
+    padding: 10px 0;
+}
+.icons .fa:hover{
+color: #3a5a40;
+}
     </style>
 </head>
 <body>
@@ -141,7 +168,7 @@ body{
             <div class="tit"> 
                 <hr class="l1">
                 <h2>
-                    ARerbot
+                    ARerBot
                 </h2>
                 <hr class="l1">
             </div>
@@ -170,7 +197,21 @@ body{
           </div>
         </div>
     </div>
-
+    <section class="footer">
+        <h4>
+            ARerBot @2023
+        </h4>
+        <p>
+            The code used in Markerless AR uses model-viewer and is not a property of ARerBot.
+            <br>
+            Thanks from ARerBot 
+        </p>
+        <div class="icons">
+            <i class="fa fa-facebook" ></i>
+            <i class="fa fa-twitter" ></i>
+            <i class="fa fa-instagram" ></i>
+        </div>
+    </section>
     <script>
         document.getElementById('cont_col2').addEventListener('click', function() {
     location.href = './model/index.html'
