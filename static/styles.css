@@ -48,7 +48,7 @@
 }
 
 input[type="file"] {
-    height: 30%;
+    height: 400px;
     cursor: pointer;
 }
 
@@ -59,33 +59,4 @@ input[type="file"] {
     display: inline-block;
     padding: 6px 12px;
     
-}
-.footer{
-    width: 100%;
-    height: auto;
-    text-align: center;
-    padding: 10px 0;
-    background-color: #eee;
-    z-index: 3;
-    opacity: 0.9;
-    margin-top: 30px;
-    position: absolute;
-    margin-top: 30%;
-}
-.footer h4{
-    margin-bottom: 0px;
-    margin-top: 7px;
-    font-weight: 600;
-}
-.footer p{
-    margin-bottom: 7px;
-}
-.icons .fa{
-    color: #0b090a;
-    margin: 0 5px;
-    cursor: pointer;
-    padding: 10px 0;
-}
-.icons .fa:hover{
-color: #3a5a40;
 }
