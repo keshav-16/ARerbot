@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARerbot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+    <style>
+*{
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    background-color: white;
+    margin-left: 0%;
+    margin-right: 0%;
+    font-family: 'Open Sans', sans-serif;
+}
+.title{
+    display: flex;
+    float: left;
+    position: relative;
+    width: 100%;
+    background-color: white;
+    height: auto;
+    z-index: 1;
+}
+
+.tit{
+    /*background-color: red;*/
+    width: 30%;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.des{
+    width: 70%;
+    /*background-color: aqua;*/
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.des p{
+    height: auto;
+}
+
+.l1{
+    color: black;
+    background-color: black;
+    border-color: black;
+    width: 100%;
+}
+
+.mod{
+    display: flex;
+    margin-top: auto;
+    width: 96%;
+    background-color: white;
+    height: auto;
+    padding: 2% 2% 2% 2%;
+}
+
+.site{
+    width: 40%;
+    height: 500px;
+}
+.content{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.content h1{
+    font-size: 56px;
+    font-weight: 600;
+    font-size: 100px;
+}
+.cont_row{
+    margin-top: 0%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 10%;
+}
+.cont_col{
+    flex-basis: 31%;
+    background: whitesmoke;
+    border-radius: 10px;
+    margin-bottom: 20%;
+    margin-top: 5%;
+    height: 20%;
+    width: 100%;
+    padding: 50px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.cont_col h3{
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 10px 0px;
+}
+.cont_col:hover{
+    box-shadow: 0 0 20px 0 #0b090a;
+    background-color: #081c15;
+    color: aliceblue;
+    cursor: pointer;
+}
+@media(max-width: 700px){
+    .cont_row{
+        flex-direction: column;
+       justify-items: center;
+    }
+    .mod{
+        flex-direction: column;
+       justify-items: center; 
+    }
+    .site{
+        width: 100%;
+    }
+    .cont_row{
+        width: 80%;
+        margin-left: 0%;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="title">
+            <div class="tit"> 
+                <hr class="l1">
+                <h2>
+                    ARerbot
+                </h2>
+                <hr class="l1">
+            </div>
+            <div class="des">
+                <p>
+                    NOTE: Markerless AR work on specific devices only.
+                    <br>
+                    Download <a href="https://i.stack.imgur.com/5cahN.png" target="_blank">hiro marker</a> for markerbased AR.
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="mod">
+            <iframe src="./model/index.html" class="site" frameborder="0"></iframe>
+            <div class="cont_row">
+            <div class="cont_col" id="cont_col1">
+                <h3>
+                    Markerbased AR
+                </h3>
+           </div>
+           <div class="cont_col" id="cont_col2">
+               <h3>
+                   Markerless AR
+               </h3>
+          </div>
+          </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('cont_col2').addEventListener('click', function() {
+    location.href = './model/index.html'
+}, false);
+
+document.getElementById('cont_col1').addEventListener('click', function() {
+    location.href = './ar.html'
+}, false);
+
+    </script>
+</body>
+</html>

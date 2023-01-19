@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+  <html> 
+  <head> 
+      <meta charset="utf-8"> 
+      <title>glb file upload</title>
+      <link rel="stylesheet" href="styles.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">  
+  </head>   
+  <body>
+      <article>
+        <div class="tit">
+          <h1>Upload an glb file</h1>
+        </div>
+        <div class="des">
+          <form method="post" enctype="multipart/form-data" action='/'>
+            <div class="in">
+                
+                <label class="custom-file-upload">
+                    <p>
+                        Drag and drop glb file below .
+                    </p>
+              <input id="inp" type="file" name="img" />
+              
+            </label>
+            </div>
+              <button class="out" type="submit">Submit</button>
+          </form>
+        </div>
+      </article>
+  </body> 
+</html>
